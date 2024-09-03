@@ -1,3 +1,7 @@
+<!-- Mandar el recibo con el desglose final de los gatos + devolver la diferencia -->
+<!-- Agregar under construction en la web -->
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -20,32 +24,33 @@
     </section>
 
     <!-- Sección Quienes Somos -->
+     <!-- Sacar los correos, que queden unicamente los nombres -->
     <section id="quienes-somos" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Quiénes Somos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan libero vitae lectus fringilla, id feugiat eros sagittis. Curabitur a ante lacus. Ut venenatis tortor nec sapien vulputate, nec scelerisque odio facilisis.</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <h5>Juan Pérez</h5>
                     <p>CEO</p>
                     <a href="mailto:juan.perez@example.com">juan.perez@example.com</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <h5>Maria García</h5>
                     <p>COO</p>
                     <a href="mailto:maria.garcia@example.com">maria.garcia@example.com</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <h5>Carlos López</h5>
                     <p>CTO</p>
                     <a href="mailto:carlos.lopez@example.com">carlos.lopez@example.com</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <h5>Ana Rodríguez</h5>
                     <p>CMO</p>
                     <a href="mailto:ana.rodriguez@example.com">ana.rodriguez@example.com</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <h5>Pedro González</h5>
                     <p>CFO</p>
                     <a href="mailto:pedro.gonzalez@example.com">pedro.gonzalez@example.com</a>
@@ -54,18 +59,118 @@
         </div>
     </section>
 
+    <!-- Carrusel de Marcas -->
+    <section class="py-5 bg-light">
+        <div class="container bg-light-grey p-4">
+            <h2 class="text-center mb-4">MARCAS</h2>
+            <div class="brand-carousel d-flex align-items-center">
+                <div class="carousel-wrapper">
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/01-saturnvanity-apple.png" alt="Apple">
+                            <p>Apple</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/02-saturnvanity-Samsung.png" alt="Samsung">
+                            <p>Samsung</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/03-saturnvanity-xiaomi.png" alt="Xiaomi">
+                            <p>Xiaomi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/04-saturnvanity-honor.png" alt="Honor">
+                            <p>Honor</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/05-saturnvanity-oppo.png" alt="Oppo">
+                            <p>Oppo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/06-saturnvanity-oneplus.png" alt="OnePlus">
+                            <p>OnePlus</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/07-saturnvanity-pixel.png" alt="Pixel">
+                            <p>Pixel</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/08-saturnvanity-poco.png" alt="Poco">
+                            <p>Poco</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/09-saturnvanity-motorola.png" alt="Motorola">
+                            <p>Motorola</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/10-saturnvanity-nokia.png" alt="Nokia">
+                            <p>Nokia</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/11-saturnvanity-ulefone.png" alt="Ulefone">
+                            <p>Ulefone</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/12-saturnvanity-huawei.png" alt="Huawei">
+                            <p>Huawei</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="brand-card">
+                            <img src="./assets/brands/13-saturnvanity-zte.png" alt="ZTE">
+                            <p>ZTE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FORMULARIO DE CONTACTO Nombre Completo*, Empresa, Mail*, Mensaje* -->
+
     <!-- Botón de WhatsApp -->
     <div class="whatsapp-button">
-        <a href="https://api.whatsapp.com/send?phone=34000000000" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+351963149791" target="_blank">
             <img src="/assets/whatsapp-logo.png" alt="WhatsApp" class="whatsapp-logo">
         </a>
     </div>
 
     <!-- Footer -->
+     <!-- El contenedor estara divido en dos, con los contactos a la izquierda y las redes a la derecha -->
     <footer class="bg-dark text-white text-center py-4">
+        <div>
+        <p>Saturn Vanity LTD</p>
+        <p>VAT NUMBER</p>
+        <p>Direccion</p>
+        <p>correo info@saturnvanity.com</p>
+    </div>
+       
         <div class="container">
             <p>Síguenos en nuestras redes sociales:</p>
             <div class="d-flex justify-content-center">
+                <!-- Agregar los logos en lugar del nombre -->
                 <a href="https://www.instagram.com" class="text-white mx-3">Instagram</a>
                 <a href="https://www.facebook.com" class="text-white mx-3">Facebook</a>
                 <a href="https://www.twitter.com" class="text-white mx-3">X</a>
@@ -74,7 +179,8 @@
         </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
