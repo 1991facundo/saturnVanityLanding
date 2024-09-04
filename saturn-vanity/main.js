@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const brandsSection = document.getElementById('brands-section');
   
     // Cargar el contenido de brands.html dinámicamente
-    fetch('./components/brands.html')
+    fetch('/components/brands.html')
       .then(response => {
         if (!response.ok) {
           throw new Error('Error al cargar el archivo brands.html');
