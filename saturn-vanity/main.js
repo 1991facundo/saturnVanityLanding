@@ -1,3 +1,18 @@
+// ANIMACION
+
+import { Application } from '@splinetool/runtime';
+
+const canvas = document.getElementById('canvas3d'); 
+if (canvas) {
+  const app = new Application(canvas);
+  app.load('https://prod.spline.design/35tJvHXnJye50ulQ/scene.splinecode');
+} else {
+  console.error("No se pudo encontrar el elemento canvas con el ID 'canvas3d'");
+}
+
+
+
+
 // CARROUSEL DE IMAGENES CON LAS MARCAS
 
 document.addEventListener("DOMContentLoaded", function () {
