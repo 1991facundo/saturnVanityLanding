@@ -1,5 +1,11 @@
+body{
+  background-color: black;
+  color: white;
+}
+
 .hero {
   height: 100vh;
+  margin-top: -150px;
 }
 
 .animation-container {
@@ -13,12 +19,74 @@
 }
 
 #canvas3d {
-  width: 1000px;
-  height: 1000px;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  top: 50%;  
+  top: 62%;  
   left: 50%; 
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  
+}
+
+.logoContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+
+.logoSvl{
+  padding-top: 50px;
+}
+
+
+.logoSvlMobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .logoSvl {
+      display: none;
+  }
+
+  .logoSvlMobile {
+      display: block;
+  }
+
+  .logoContainer {
+      flex-wrap: wrap; 
+  }
+
+  .animation-container {
+      order: 1;
+  }
+
+  .logoSvlMobile {
+      order: 2; 
+  }
+}
+
+
+@media (min-width: 993px) {
+  .logoSvl {
+      display: block;
+  }
+
+  .logoSvlMobile {
+      display: none;
+  }
+
+  .logoContainer {
+      flex-wrap: nowrap; 
+  }
+}
+
+@media (max-width: 450px) {
+  .logoSvlMobile img {
+      max-width: 315px;
+      width: 100%; 
+  }
 }
 
 
@@ -34,9 +102,9 @@
   height: 60px;
 }
 
-.bg-light-grey {
+/* .bg-light-grey {
   background-color: #d3d3d3;
-}
+} */
 
 .brand-carousel {
   overflow: hidden; 
@@ -56,7 +124,7 @@
 
 .brand-card {
   width: 200px;
-  background-color: orange;
+  background-color: rgb(217, 98, 0);
   padding: 10px;
   border-radius: 10px;
   text-align: center;
