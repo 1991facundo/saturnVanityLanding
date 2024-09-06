@@ -1,179 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saturn Vanity LDA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Saturn Vanity</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/logoNavBar.png" alt="svl logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contáctanos</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contáctanos</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-    <section class="hero text-white text-center d-flex align-items-center justify-content-center">
-        <div class="container logoContainer">
-          
-          <div class="animation-container">
-            <canvas id="canvas3d"></canvas>
-          </div>
+    <section
+      class="hero text-white text-center d-flex align-items-center justify-content-center"
+    >
+      <div class="container logoContainer">
 
-          <div class="logoSvl">
-            <img src="/assets/svl.png" alt="Saturn Vanity LDA">
-          </div>
-
-          <div class="logoSvlMobile">
-            <img src="/assets/svlMobile.png" alt="Saturn Vanity LDA">
-          </div>
-
+        <div class="animation-container">
+          <canvas id="canvas3d"></canvas>
         </div>
-      </section>
-      
-     <!-- Cargar sección de Marcas -->
-     <div id="brands-section"></div>
+
+        <div id="deals" >
+            <h3>Tenemos siempre los mejores precios en moviles</h3>
+            <h4>Descargate las ofertas del dia haciendo click aca!</h4>
+            <button><p>Descarga las ofertas</p></button>
+        </div>
+
+       
+      </div>
+    </section>
+
+    <!-- Cargar sección de Marcas -->
+    <div id="brands-section"></div>
 
     <!-- Sección Quienes Somos -->
     <section id="quienes-somos" class="py-5">
-        <div class="container text-center">
-          <h2 class="mb-4">Quiénes Somos</h2>
-          <p>
-            En <strong>Saturn Vanity</strong>, somos un equipo de profesionales con más de 20 años de experiencia en el mercado de la tecnología. Nos especializamos en la compra y venta B2B de teléfonos móviles, tanto nuevos como reacondicionados, de marcas reconocidas como Apple. Nuestro compromiso es ofrecer dispositivos de la más alta calidad, manteniendo siempre relaciones comerciales basadas en la confianza y la eficiencia.
-          </p>
-          <div class="row names mt-5">
-            <div class="parallax-item">
-              <h5>Jesús Moreno León</h5>
-              <p>CEO</p>
-            </div>
-            <div class="parallax-item">
-              <h5>Gemma Pardo</h5>
-              <p>CFO</p>
-            </div>
+      <div class="container text-center">
+        <h2 class="mb-4">QUIÉNES SOMOS</h2>
+        <p>
+          En <strong>Saturn Vanity</strong>, somos un equipo de profesionales
+          con más de 20 años de experiencia en el mercado de la tecnología. Nos
+          especializamos en la compra y venta B2B de teléfonos móviles, tanto
+          nuevos como reacondicionados, de marcas reconocidas como Apple.
+          Nuestro compromiso es ofrecer dispositivos de la más alta calidad,
+          manteniendo siempre relaciones comerciales basadas en la confianza y
+          la eficiencia.
+        </p>
+        <div class="row names mt-5">
+          <div class="parallax-item">
+            <h5>Jesús Moreno León</h5>
+            <p>CEO</p>
+          </div>
+          <div class="parallax-item">
+            <h5>Gemma Pardo</h5>
+            <p>CFO</p>
           </div>
         </div>
-      </section>
-      
-      
+      </div>
+    </section>
 
     <!-- Formulario -->
 
     <div id="contact-section">
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Contáctanos</h2>
-                <div>
-               <form id="contactForm" method="POST" action="components/send-email.php"> 
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label">Nombre Completo*</label>
-                        <input type="text" class="form-control" id="fullName" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="company" class="form-label">Empresa</label>
-                        <input type="text" class="form-control" id="company" name="company">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico*</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje*</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>     
-                </div>
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2>CONTÁCTANOS</h2>
 
-                <div class="imgContactForm">
-                <!-- IMAGEN PARA LA SECCION DEL FORMULARIO -->
+          <div class="contact-content">
+            
+            <form
+              id="contactForm"
+              method="POST"
+              action="components/send-email.php"
+            >
+              <div class="mb-3">
+                <label for="fullName" class="form-label"
+                  >Nombre Completo*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="company" class="form-label">Empresa</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="company"
+                  name="company"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Correo Electrónico*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje*</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
 
-                </div>
-                
+            <div class="imgContactForm">
+              <img src="/assets/logo.png" alt="saturn vanity logo" />
             </div>
-        </section>
-    </div>
-    
 
- 
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Botón de WhatsApp -->
     <div class="whatsapp-button">
-        <a href="https://api.whatsapp.com/send?phone=351963149791" target="_blank">
-            <img src="/assets/social/whatsapp.png" alt="WhatsApp" class="whatsapp-logo">
-        </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=351963149791"
+        target="_blank"
+      >
+        <img
+          src="/assets/social/whatsapp.png"
+          alt="WhatsApp"
+          class="whatsapp-logo"
+        />
+      </a>
     </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center mb-4">
-            <p>VAT n° PT517589850</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Izquierda: Información de la oficina -->
-                <div class="col-md-4 text-start">
-                    <h5>Office</h5>
-                    <p>Rua Rossio do Meio 10 A 11 G<br>7350-135, Elvas, Portugal</p>
-                    <h6>Contact</h6>
-                    <p>+351 963 149 791<br>info@saturnvanity.com</p>
-                </div>
+      <div class="container text-center mb-4">
+        <p>VAT n° PT517589850</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Izquierda: Información de la oficina -->
+          <div class="col-md-4 text-start">
+            <h5>Office</h5>
+            <p>Rua Rossio do Meio 10 A 11 G<br />7350-135, Elvas, Portugal</p>
+            <h6>Contact</h6>
+            <p>+351 963 149 791<br />info@saturnvanity.com</p>
+          </div>
 
-                <!-- Centro: Información del almacén -->
-                <div class="col-md-4 text-center">
-                    <h5>Warehouse</h5>
-                    <p>Rua da Gráfica Almondina lt 34<br>2350-483, Torres Novas, Portugal</p>
-                    <h6>Contact</h6>
-                    <p>+351 936 256 067</p>
-                </div>
+          <!-- Centro: Información del almacén -->
+          <div class="col-md-4 text-center">
+            <h5>Warehouse</h5>
+            <p>
+              Rua da Gráfica Almondina lt 34<br />2350-483, Torres Novas,
+              Portugal
+            </p>
+            <h6>Contact</h6>
+            <p>+351 936 256 067</p>
+          </div>
 
-                <!-- Derecha: Redes sociales -->
-                <div class="col-md-4 text-end">
-                    <h5>Síguenos en nuestras redes sociales:</h5>
-                    <div class="d-flex justify-content-end">
-                        <!-- Reemplaza el texto con íconos si los tienes -->
-                        <a href="https://www.instagram.com" class="text-white mx-2">
-                            <img src="assets/social/instagram.png" alt="Instagram" width="24">
-                        </a>
-                        <a href="https://www.facebook.com" class="text-white mx-2">
-                            <img src="assets/social/facebook.png" alt="Facebook" width="24">
-                        </a>
-                        <a href="https://www.twitter.com" class="text-white mx-2" style="color: white;">
-                            <img src="/assets/social/twitter(1).png" alt="X" width="24">
-                        </a>
-                        <a href="https://www.linkedin.com" class="text-white mx-2">
-                            <img src="/assets/social/linkedin.png" alt="LinkedIn" width="24">
-                        </a>
-                    </div>
-                </div>
+          <!-- Derecha: Redes sociales -->
+          <div class="col-md-4 text-end">
+            <h5>Síguenos en nuestras redes sociales:</h5>
+            <div class="d-flex justify-content-end">
+              <!-- Reemplaza el texto con íconos si los tienes -->
+              <a href="https://www.instagram.com" class="text-white mx-2">
+                <img
+                  src="assets/social/instagram.png"
+                  alt="Instagram"
+                  width="24"
+                />
+              </a>
+              <a href="https://www.facebook.com" class="text-white mx-2">
+                <img
+                  src="assets/social/facebook.png"
+                  alt="Facebook"
+                  width="24"
+                />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                class="text-white mx-2"
+                style="color: white"
+              >
+                <img src="/assets/social/twitter(1).png" alt="X" width="24" />
+              </a>
+              <a href="https://www.linkedin.com" class="text-white mx-2">
+                <img
+                  src="/assets/social/linkedin.png"
+                  alt="LinkedIn"
+                  width="24"
+                />
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Incluye el script main.js -->
     <script src="./main.js" type="module"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>

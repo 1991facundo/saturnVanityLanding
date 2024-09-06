@@ -15,6 +15,15 @@ h1, h2, h3 {
   z-index: 1001; 
 }
 
+.nav-item{
+  color: white !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  /* width: auto; */
+}
+
 @media (max-width: 500px) {
   .navbar-brand {
       font-size: 1.2rem;
@@ -51,45 +60,33 @@ h1, h2, h3 {
   top: 62%;  
   left: 50%; 
   transform: translate(-50%, -50%);
-  
 }
 
 .logoContainer{
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  
+
 }
 
-
-.logoSvl{
-  padding-top: 50px;
-}
-
-
-.logoSvlMobile {
-  display: none;
+#deals{
+  padding-top: 100px !important;
 }
 
 @media (max-width: 992px) {
-  .logoSvl {
-      display: none;
-  }
-
-  .logoSvlMobile {
-      display: block;
-  }
-
   .logoContainer {
-      flex-wrap: wrap; 
+    flex-wrap: wrap;
+    flex-direction: column; /* Cambia el orden de los elementos a columna */
   }
 
   .animation-container {
-      order: 1;
+    order: 1; /* Asegura que la animación esté arriba */
   }
 
-  .logoSvlMobile {
-      order: 2; 
+  #deals {
+    order: 2; /* Coloca #deals debajo de la animación */
+    padding-top: 20px !important; /* Ajusta el espaciado si es necesario */
   }
 }
 
@@ -125,7 +122,7 @@ h1, h2, h3 {
 
 .carousel-wrapper {
   display: flex;
-  animation: scroll 60s linear infinite; /* Ajusta la duración si es necesario */
+  animation: scroll 60s linear infinite; 
 }
 
 .carousel-item {
@@ -157,17 +154,15 @@ h1, h2, h3 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Ajuste del porcentaje para que el loop sea fluido */
+    transform: translateX(-50%); 
   }
 }
 
 
-
 /* SECTION QUIENES SOMOS */
 
-
 #quienes-somos {
-font-size: large;
+  font-size: large;
   padding: 20px;
   padding-top: 80px !important; 
   scroll-padding-top: 80px !important; 
@@ -175,7 +170,6 @@ font-size: large;
   color: rgb(255, 255, 255);
   margin: 25px;
 }
-
 
 @media (max-width: 767px) {
   #quienes-somos {
@@ -204,24 +198,103 @@ h2, h5 {
 }
 
 /* Estilos para el efecto de parallax */
-.parallax-item {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+@media (min-width: 992px) {
+  .parallax-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .parallax-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Cuando el elemento es visible, se activan las animaciones */
-.parallax-item.show {
-  opacity: 1;
-  transform: translateY(0);
+@media (max-width: 991px) {
+  .parallax-item {
+    opacity: 1;
+    transform: none;
+  }
 }
-
 
 /* CONTACT SECTION */
 
-#contact-section{
+#contact-section {
   padding-top: 40px !important; 
   scroll-padding-top: 40px !important; 
+}
+
+#contact-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#contact-section h2 {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#contactForm {
+  flex: 0 0 50%; 
+  padding-right: 20px;
+}
+
+.imgContactForm {
+  flex: 0 0 50%; 
+  text-align: center;
+}
+
+.imgContactForm img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Parallax effect for imgContactForm on desktop */
+@media (min-width: 992px) {
+  .imgContactForm {
+    opacity: 0;
+    transform: translateX(100px); /* Empieza fuera de la pantalla, a la derecha */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .imgContactForm.show {
+    opacity: 1;
+    transform: translateX(0); /* Vuelve a su posición original */
+  }
+}
+
+@media (max-width: 991px) {
+  .imgContactForm {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .contact-content {
+    flex-direction: column; 
+  }
+
+  #contactForm, .imgContactForm {
+    flex: 0 0 100%; 
+    padding: 0;
+  }
+
+  .imgContactForm img {
+    margin-top: 20px;
+  }
 }
 
 /* BOTON DE WHATSAPP */
@@ -237,4 +310,3 @@ h2, h5 {
   width: 60px;
   height: 60px;
 }
-

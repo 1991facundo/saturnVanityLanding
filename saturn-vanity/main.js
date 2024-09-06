@@ -69,16 +69,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // Función para manejar la animación de parallax al hacer scroll
 function handleParallaxScroll() {
   const parallaxItems = document.querySelectorAll('.parallax-item');
+  const imgContactForm = document.querySelector('.imgContactForm');
 
-  parallaxItems.forEach(item => {
-    const itemPosition = item.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+  if (window.innerWidth >= 992) { // Solo en pantallas grandes
+    parallaxItems.forEach(item => {
+      const itemPosition = item.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
 
-    // Si el elemento está dentro de la ventana visible
-    if (itemPosition < windowHeight - 100) {
-      item.classList.add('show');
+      // Si el elemento está dentro de la ventana visible
+      if (itemPosition < windowHeight - 100) {
+        item.classList.add('show');
+      }
+    });
+
+    // Agregar parallax al imgContactForm
+    const imgContactPosition = imgContactForm.getBoundingClientRect().top;
+    if (imgContactPosition < window.innerHeight - 100) {
+      imgContactForm.classList.add('show');
     }
-  });
+  } else {
+    // Deshabilitar el parallax en pantallas pequeñas
+    parallaxItems.forEach(item => {
+      item.classList.remove('show');
+    });
+    imgContactForm.classList.remove('show');
+  }
 }
 
 // Llamar a la función cuando se hace scroll
@@ -87,7 +102,7 @@ window.addEventListener('scroll', handleParallaxScroll);
 // Llamar a la función por si hay elementos visibles al cargar la página
 document.addEventListener('DOMContentLoaded', handleParallaxScroll);
 
-  
+
 // FORMULARIO
 
 document.addEventListener("DOMContentLoaded", function () {
