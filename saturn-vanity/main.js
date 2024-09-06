@@ -1,3 +1,5 @@
+// HERO SECTION
+
 import { Application } from '@splinetool/runtime';
 
 const canvas = document.getElementById('canvas3d'); 
@@ -29,30 +31,62 @@ if (canvas) {
 }
 
 
-
-
-
 // CARROUSEL DE IMAGENES CON LAS MARCAS
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona el div donde se va a cargar la sección de marcas
-    const brandsSection = document.getElementById('brands-section');
-  
-    // Cargar el contenido de brands.html dinámicamente
-    fetch('/components/brands.html')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Error al cargar el archivo brands.html');
-        }
-        return response.text();
-      })
-      .then(data => {
-        brandsSection.innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Hubo un problema al cargar brands.html:', error);
+  // Selecciona el div donde se va a cargar la sección de marcas
+  const brandsSection = document.getElementById('brands-section');
+
+  // Cargar el contenido de brands.html dinámicamente
+  fetch('/components/brands.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al cargar el archivo brands.html');
+      }
+      return response.text();
+    })
+    .then(data => {
+      brandsSection.innerHTML = data;
+
+      // Después de cargar la sección de marcas, clona las tarjetas para crear un loop infinito
+      const carouselWrapper = document.querySelector('.carousel-wrapper');
+      const carouselItems = carouselWrapper.querySelectorAll('.carousel-item');
+
+      // Clona los elementos para que el carrusel sea fluido
+      carouselItems.forEach(item => {
+        const clone = item.cloneNode(true);
+        carouselWrapper.appendChild(clone);
       });
+    })
+    .catch(error => {
+      console.error('Hubo un problema al cargar brands.html:', error);
+    });
+});
+
+
+// QUIENES SOMOS
+
+// Función para manejar la animación de parallax al hacer scroll
+function handleParallaxScroll() {
+  const parallaxItems = document.querySelectorAll('.parallax-item');
+
+  parallaxItems.forEach(item => {
+    const itemPosition = item.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Si el elemento está dentro de la ventana visible
+    if (itemPosition < windowHeight - 100) {
+      item.classList.add('show');
+    }
   });
+}
+
+// Llamar a la función cuando se hace scroll
+window.addEventListener('scroll', handleParallaxScroll);
+
+// Llamar a la función por si hay elementos visibles al cargar la página
+document.addEventListener('DOMContentLoaded', handleParallaxScroll);
+
   
 // FORMULARIO
 

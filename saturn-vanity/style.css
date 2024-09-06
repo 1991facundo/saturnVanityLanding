@@ -1,11 +1,37 @@
-body{
-  background-color: black;
+body {
+  background-color: rgb(0, 0, 0);
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: white !important;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px;
+  z-index: 1001; 
+}
+
+@media (max-width: 500px) {
+  .navbar-brand {
+      font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 501px) {
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+}
+
+/* HERO SECTION */
 
 .hero {
   height: 100vh;
-  margin-top: -150px;
+  margin-top: -100px;
 }
 
 .animation-container {
@@ -89,36 +115,21 @@ body{
   }
 }
 
-
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-logo {
-  width: 60px;
-  height: 60px;
-}
-
-/* .bg-light-grey {
-  background-color: #d3d3d3;
-} */
+/* CARROUSEL BRANDS */
 
 .brand-carousel {
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
   white-space: nowrap;
 }
 
 .carousel-wrapper {
   display: flex;
-  animation: scroll 60s linear infinite; 
+  animation: scroll 60s linear infinite; /* Ajusta la duración si es necesario */
 }
 
 .carousel-item {
-  display: inline-block; 
+  display: inline-block;
   margin-right: 20px;
 }
 
@@ -135,16 +146,95 @@ body{
   width: 100%;
   height: 150px;
   object-fit: contain;
-  background-color: white; 
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
 }
 
+/* Animación infinita y continua para el loop */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Ajuste del porcentaje para que el loop sea fluido */
   }
 }
+
+
+
+/* SECTION QUIENES SOMOS */
+
+
+#quienes-somos {
+font-size: large;
+  padding: 20px;
+  padding-top: 80px !important; 
+  scroll-padding-top: 80px !important; 
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 25px;
+}
+
+
+@media (max-width: 767px) {
+  #quienes-somos {
+    box-shadow: none; 
+  }
+}
+
+.row.names {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.row.names div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+  color: #000 !important;
+}
+
+h2, h5 {
+  color: #000; 
+}
+
+/* Estilos para el efecto de parallax */
+.parallax-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cuando el elemento es visible, se activan las animaciones */
+.parallax-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* CONTACT SECTION */
+
+#contact-section{
+  padding-top: 40px !important; 
+  scroll-padding-top: 40px !important; 
+}
+
+/* BOTON DE WHATSAPP */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-logo {
+  width: 60px;
+  height: 60px;
+}
+

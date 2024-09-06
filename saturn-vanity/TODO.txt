@@ -1,0 +1,4 @@
+
+Cambiar la seccion "Quienes somos" porque es horrible
+Cortar el formulario a la mitad y agregar una imagen
+Arreglar el carrousel
