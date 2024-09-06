@@ -139,6 +139,12 @@ margin-top: 50px;
     margin-top: 55px !important;
   }
 }
+
+@media (max-width: 500px) {
+  #brands-section{
+    margin-top: 80px !important;
+  }
+}
 .brand-carousel {
   overflow: hidden;
   position: relative;
@@ -206,6 +212,7 @@ margin-top: 50px;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  flex-wrap: wrap; /* Asegura que los elementos hagan wrap en pantallas pequeñas */
 }
 
 .row.names div {
@@ -216,6 +223,7 @@ margin-top: 50px;
   width: 100%;
   max-width: 200px;
   color: #000 !important;
+  margin-bottom: 15px; /* Añade espacio entre los elementos al hacer wrap */
 }
 
 h2, h5 {
@@ -242,6 +250,7 @@ h2, h5 {
     transform: none;
   }
 }
+
 
 /* CONTACT SECTION */
 
@@ -313,6 +322,7 @@ h2, h5 {
     flex-direction: column; 
   }
 
+
   #contactForm, .imgContactForm {
     flex: 0 0 100%; 
     padding: 0;
@@ -320,6 +330,10 @@ h2, h5 {
 
   .imgContactForm img {
     margin-top: 20px;
+  }
+
+  #contactForm {
+    width: 100%;
   }
 }
 
