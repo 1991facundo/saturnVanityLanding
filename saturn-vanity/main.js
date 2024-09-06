@@ -12,10 +12,10 @@ if (canvas) {
 
     // Función para cargar la animación adecuada según el tamaño de la pantalla
     function loadCanvasAnimation() {
-        if (window.innerWidth <= 450 && currentAnimation !== 'mobile') {
+        if (window.innerWidth <= 550 && currentAnimation !== 'mobile') {
             app.load(mobileAnimationUrl); // Cargar animación móvil
             currentAnimation = 'mobile'; // Actualizar el estado actual
-        } else if (window.innerWidth > 450 && currentAnimation !== 'desktop') {
+        } else if (window.innerWidth > 550 && currentAnimation !== 'desktop') {
             app.load(desktopAnimationUrl); // Cargar animación desktop
             currentAnimation = 'desktop'; // Actualizar el estado actual
         }
@@ -28,6 +28,16 @@ if (canvas) {
     window.addEventListener('resize', loadCanvasAnimation);
 } else {
     console.error("No se pudo encontrar el elemento canvas con el ID 'canvas3d'");
+}
+
+// Manejar el botón de ofertas
+
+const offerButton = document.getElementById('offer-button');
+
+if (offerButton) {
+  offerButton.addEventListener('click', function() {
+    window.open('https://docs.google.com/spreadsheets/d/1Ejo7MZBtnpe8HZCA6Csqjxla1hVbd21RIN3IsW8U7zA/edit?usp=sharing', '_blank');
+  });
 }
 
 

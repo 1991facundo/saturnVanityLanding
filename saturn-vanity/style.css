@@ -20,8 +20,8 @@ h1, h2, h3 {
 }
 
 .navbar-brand img {
-  height: 50px;
-  /* width: auto; */
+  height: 50px; 
+
 }
 
 @media (max-width: 500px) {
@@ -40,7 +40,8 @@ h1, h2, h3 {
 
 .hero {
   height: 100vh;
-  margin-top: -100px;
+  margin-top: -150px;
+  margin-bottom: 25px;
 }
 
 .animation-container {
@@ -51,6 +52,10 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+canvas{
+  cursor: default;
 }
 
 #canvas3d {
@@ -64,56 +69,76 @@ h1, h2, h3 {
 
 .logoContainer{
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-
+margin-top: 50px;
 }
 
-#deals{
-  padding-top: 100px !important;
-}
-
-@media (max-width: 992px) {
-  .logoContainer {
-    flex-wrap: wrap;
-    flex-direction: column; /* Cambia el orden de los elementos a columna */
-  }
-
-  .animation-container {
-    order: 1; /* Asegura que la animación esté arriba */
-  }
-
-  #deals {
-    order: 2; /* Coloca #deals debajo de la animación */
-    padding-top: 20px !important; /* Ajusta el espaciado si es necesario */
-  }
-}
-
-
-@media (min-width: 993px) {
-  .logoSvl {
-      display: block;
-  }
-
-  .logoSvlMobile {
-      display: none;
-  }
+@media (max-width: 993px) {
+  
 
   .logoContainer {
-      flex-wrap: nowrap; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 100px;
+  }
+
+ 
+}
+
+@media (min-width: 994px) {
+  
+
+  .textHero {
+     margin-top: 100px;
+      
   }
 }
 
-@media (max-width: 450px) {
-  .logoSvlMobile img {
-      max-width: 315px;
-      width: 100%; 
+@media (min-width: 200px) {
+  canvas{
+    cursor: default;
   }
 }
+
+#deals button {
+  background-color: #f58723; 
+  color: #000000; 
+  font-weight: bold; 
+  border: none; 
+  padding: 15px 30px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  font-size: 1rem; 
+  margin-top: 25px;
+}
+
+#deals button p {
+  margin: 0; 
+}
+
+#deals button:hover {
+  background-color: #d4c9ad; 
+  transform: translateY(-3px); 
+}
+
+#deals button:active {
+  background-color: #c7ba99; 
+  transform: translateY(2px); 
+}
+
 
 /* CARROUSEL BRANDS */
 
+
+
+@media (max-width: 993px) {
+  #brands-section{
+    margin-top: 55px !important;
+  }
+}
 .brand-carousel {
   overflow: hidden;
   position: relative;
@@ -243,6 +268,7 @@ h2, h5 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 #contactForm {
