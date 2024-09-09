@@ -6,8 +6,14 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
+          // Copia los archivos dentro de 'components'
           src: 'components/**/*',
           dest: 'components'
+        },
+        {
+          // Copia los archivos JSON dentro de 'locales'
+          src: 'locales/*.json',
+          dest: 'locales'
         }
       ]
     })
