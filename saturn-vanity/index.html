@@ -19,18 +19,12 @@
     Navbar
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div class="container-fluid">
+        <!-- El logo y el botón de menú -->
         <a class="navbar-brand" href="#"><img src="/assets/logoNavBar.png" alt="svl logo"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -40,9 +34,21 @@
               <a class="nav-link" href="#contact-section">Contáctanos</a>
             </li>
           </ul>
+          <!-- Selector de Idioma -->
+          <select id="language-selector" class="form-select ms-2" style="width: auto;">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="it">Italiano</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="pt">Português</option>
+            <option value="el">Ελληνικά</option>
+            <option value="pl">Polski</option>
+          </select>
         </div>
       </div>
     </nav>
+    
 
     <!-- HERO SECTION -->
 

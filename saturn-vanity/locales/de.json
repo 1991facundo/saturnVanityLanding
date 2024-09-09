@@ -1,25 +1,33 @@
 {
-    "navbar": {
-      "quienes_somos": "Wer Wir Sind",
-      "contactanos": "Kontaktieren Sie uns"
-    },
-    "hero_section": {
-      "header1": "Bei SATURN VANITY",
-      "header2": "Wir haben immer die besten Angebote für Handys",
-      "button": "HEUTIGE ANGEBOTE"
-    },
-    "contact_form": {
-      "name_label": "Vollständiger Name*",
-      "company_label": "Unternehmen",
-      "email_label": "E-Mail-Adresse*",
-      "message_label": "Nachricht*",
-      "submit_button": "Senden"
-    },
-    "footer": {
-      "office": "Büro",
-      "contact": "Kontakt",
-      "warehouse": "Lager",
-      "social_media": "Folge uns in den sozialen Medien:"
-    }
+  "navbar": {
+    "quienes_somos": "Wer Wir Sind",
+    "contactanos": "Kontaktieren Sie uns"
+  },
+  "hero_section": {
+    "header1": "Bei SATURN VANITY",
+    "header2": "Wir haben immer die besten Angebote für Handys",
+    "subheader": "Laden Sie die Angebote des Tages hier herunter!",
+    "button": "HEUTIGE ANGEBOTE"
+  },
+  "brands_section": {
+    "title": "MARKEN"
+  },
+  "about_us": {
+    "title": "WER WIR SIND",
+    "description": "Bei Saturn Vanity sind wir ein Team von Fachleuten mit über 20 Jahren Erfahrung auf dem Technologiemarkt. Wir sind auf den B2B-Einkauf und -Verkauf von Mobiltelefonen spezialisiert, sowohl neuen als auch generalüberholten, von bekannten Marken wie Apple. Unser Engagement ist es, qualitativ hochwertige Geräte anzubieten und dabei stets Geschäftsbeziehungen auf Vertrauen und Effizienz zu basieren."
+  },
+  "contact_form": {
+    "contactanos": "KONTAKTIEREN SIE UNS",
+    "name_label": "Vollständiger Name*",
+    "company_label": "Unternehmen",
+    "email_label": "E-Mail-Adresse*",
+    "message_label": "Nachricht*",
+    "submit_button": "Senden"
+  },
+  "footer": {
+    "office": "Büro",
+    "contact": "Kontakt",
+    "warehouse": "Lager",
+    "social_media": "Folge uns in sozialen Netzwerken:"
   }
-  
+}

@@ -1,25 +1,33 @@
 {
-    "navbar": {
-      "quienes_somos": "Quiénes Somos",
-      "contactanos": "Contáctanos"
-    },
-    "hero_section": {
-      "header1": "En SATURN VANITY",
-      "header2": "Tenemos siempre los mejores precios en móviles",
-      "button": "OFERTAS DE HOY"
-    },
-    "contact_form": {
-      "name_label": "Nombre Completo*",
-      "company_label": "Empresa",
-      "email_label": "Correo Electrónico*",
-      "message_label": "Mensaje*",
-      "submit_button": "Enviar"
-    },
-    "footer": {
-      "office": "Oficina",
-      "contact": "Contacto",
-      "warehouse": "Almacén",
-      "social_media": "Síguenos en nuestras redes sociales:"
-    }
+  "navbar": {
+    "quienes_somos": "Quiénes Somos",
+    "contactanos": "Contáctanos"
+  },
+  "hero_section": {
+    "header1": "En SATURN VANITY",
+    "header2": "Tenemos siempre los mejores precios en móviles",
+    "subheader": "Descargate las ofertas del día haciendo click acá!",
+    "button": "OFERTAS DE HOY"
+  },
+  "brands_section": {
+    "title": "MARCAS"
+  },
+  "about_us": {
+    "title": "QUIÉNES SOMOS",
+    "description": "En Saturn Vanity, somos un equipo de profesionales con más de 20 años de experiencia en el mercado de la tecnología. Nos especializamos en la compra y venta B2B de teléfonos móviles, tanto nuevos como reacondicionados, de marcas reconocidas como Apple. Nuestro compromiso es ofrecer dispositivos de la más alta calidad, manteniendo siempre relaciones comerciales basadas en la confianza y la eficiencia."
+  },
+  "contact_form": {
+    "contactanos": "CONTÁCTANOS",
+    "name_label": "Nombre Completo*",
+    "company_label": "Empresa",
+    "email_label": "Correo Electrónico*",
+    "message_label": "Mensaje*",
+    "submit_button": "Enviar"
+  },
+  "footer": {
+    "office": "Oficina",
+    "contact": "Contacto",
+    "warehouse": "Almacén",
+    "social_media": "Síguenos en nuestras redes sociales:"
   }
-  
+}

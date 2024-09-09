@@ -1,25 +1,33 @@
 {
-    "navbar": {
-      "quienes_somos": "Who We Are",
-      "contactanos": "Contact Us"
-    },
-    "hero_section": {
-      "header1": "At SATURN VANITY",
-      "header2": "We always have the best mobile phone deals",
-      "button": "TODAY'S OFFERS"
-    },
-    "contact_form": {
-      "name_label": "Full Name*",
-      "company_label": "Company",
-      "email_label": "Email Address*",
-      "message_label": "Message*",
-      "submit_button": "Send"
-    },
-    "footer": {
-      "office": "Office",
-      "contact": "Contact",
-      "warehouse": "Warehouse",
-      "social_media": "Follow us on social media:"
-    }
+  "navbar": {
+    "quienes_somos": "Who We Are",
+    "contactanos": "Contact Us"
+  },
+  "hero_section": {
+    "header1": "At SATURN VANITY",
+    "header2": "We always have the best mobile phone deals",
+    "subheader": "Download today's offers by clicking here!",
+    "button": "TODAY'S OFFERS"
+  },
+  "brands_section": {
+    "title": "BRANDS"
+  },
+  "about_us": {
+    "title": "WHO WE ARE",
+    "description": "At Saturn Vanity, we are a team of professionals with over 20 years of experience in the technology market. We specialize in B2B buying and selling of mobile phones, both new and refurbished, from well-known brands like Apple. Our commitment is to offer high-quality devices while maintaining commercial relationships based on trust and efficiency."
+  },
+  "contact_form": {
+    "contactanos": "CONTACT US",
+    "name_label": "Full Name*",
+    "company_label": "Company",
+    "email_label": "Email Address*",
+    "message_label": "Message*",
+    "submit_button": "Send"
+  },
+  "footer": {
+    "office": "Office",
+    "contact": "Contact",
+    "warehouse": "Warehouse",
+    "social_media": "Follow us on social media:"
   }
-  
+}

@@ -1,3 +1,109 @@
+// Función para cargar las traducciones desde el archivo JSON
+const loadTranslations = async (lang) => {
+  try {
+    const response = await fetch(`/locales/${lang}.json`);
+    const translations = await response.json();
+    updateTextContent(translations);
+  } catch (error) {
+    console.error("Error cargando las traducciones", error);
+  }
+};
+
+// Función para actualizar el contenido del texto en la página
+const updateTextContent = (translations) => {
+  // Navbar
+  const quienesSomosLink = document.querySelector('.nav-link[href="#quienes-somos"]');
+  if (quienesSomosLink) quienesSomosLink.innerText = translations.navbar.quienes_somos;
+
+  const contactanosLink = document.querySelector('.nav-link[href="#contact-section"]');
+  if (contactanosLink) contactanosLink.innerText = translations.navbar.contactanos;
+
+  // Hero Section
+  const header1 = document.querySelector('.textHero h3:nth-of-type(1)');
+  if (header1) header1.innerText = translations.hero_section.header1;
+
+  const header2 = document.querySelector('.textHero h3:nth-of-type(2)');
+  if (header2) header2.innerText = translations.hero_section.header2;
+
+  const subheader = document.querySelector('.textHero h4');
+  if (subheader) subheader.innerText = translations.hero_section.subheader;
+
+  const offerButton = document.querySelector('#offer-button p');
+  if (offerButton) offerButton.innerText = translations.hero_section.button;
+
+  // Sección de marcas (solo título)
+  const brandsTitle = document.querySelector('#brands-section h2');
+  if (brandsTitle) brandsTitle.innerText = translations.brands_section.title;
+
+  // Quiénes Somos
+  const quienesSomosTitle = document.querySelector('#quienes-somos h2');
+  if (quienesSomosTitle) quienesSomosTitle.innerText = translations.about_us.title;
+
+  const quienesSomosDesc = document.querySelector('#quienes-somos p');
+  if (quienesSomosDesc) quienesSomosDesc.innerText = translations.about_us.description;
+
+  // Formulario de contacto
+  const fullNameLabel = document.querySelector('label[for="fullName"]');
+  if (fullNameLabel) fullNameLabel.innerText = translations.contact_form.name_label;
+
+  const companyLabel = document.querySelector('label[for="company"]');
+  if (companyLabel) companyLabel.innerText = translations.contact_form.company_label;
+
+  const emailLabel = document.querySelector('label[for="email"]');
+  if (emailLabel) emailLabel.innerText = translations.contact_form.email_label;
+
+  const messageLabel = document.querySelector('label[for="message"]');
+  if (messageLabel) messageLabel.innerText = translations.contact_form.message_label;
+
+  const submitButton = document.querySelector('button[type="submit"]');
+  if (submitButton) submitButton.innerText = translations.contact_form.submit_button;
+
+  // CONTÁCTANOS
+  const contactanosTitle = document.querySelector('#contact-section h2');
+  if (contactanosTitle) contactanosTitle.innerText = translations.contact_form.contactanos;
+
+  // Footer
+  const officeTitle = document.querySelector('.footer .office h5');
+  if (officeTitle) officeTitle.innerText = translations.footer.office;
+
+  const contactDetails = document.querySelector('.footer .office p');
+  if (contactDetails) contactDetails.innerText = translations.footer.contact;
+
+  const warehouseTitle = document.querySelector('.footer .warehouse h5');
+  if (warehouseTitle) warehouseTitle.innerText = translations.footer.warehouse;
+
+  const socialMediaTitle = document.querySelector('.footer .social_media h5');
+  if (socialMediaTitle) socialMediaTitle.innerText = translations.footer.social_media;
+};
+
+// Detectar el idioma del navegador
+const userLang = navigator.language || 'es';
+let lang = userLang.split('-')[0]; // Nos quedamos con 'es', 'en', etc.
+
+// Lista de idiomas soportados
+const supportedLanguages = ['es', 'en', 'it', 'de', 'fr', 'pt', 'el', 'pl'];
+
+// Si el idioma detectado no está soportado, usar inglés como predeterminado
+if (!supportedLanguages.includes(lang)) {
+  lang = 'en';
+}
+
+// Seleccionamos el idioma detectado en el selector
+const languageSelector = document.getElementById('language-selector');
+languageSelector.value = lang;
+
+// Cargar las traducciones en función del idioma detectado
+loadTranslations(lang);
+
+// Funcionalidad para cambiar el idioma desde un selector
+languageSelector.addEventListener('change', (event) => {
+  const selectedLang = event.target.value;
+  loadTranslations(selectedLang);
+  console.log(`Cambiando idioma a: ${selectedLang}`);
+});
+
+
+
 // HERO SECTION
 
 import { Application } from '@splinetool/runtime';

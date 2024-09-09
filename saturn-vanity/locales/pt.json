@@ -1,25 +1,33 @@
 {
-    "navbar": {
-      "quienes_somos": "Quem Somos",
-      "contactanos": "Fale Conosco"
-    },
-    "hero_section": {
-      "header1": "Na SATURN VANITY",
-      "header2": "Temos sempre as melhores ofertas em celulares",
-      "button": "OFERTAS DE HOJE"
-    },
-    "contact_form": {
-      "name_label": "Nome Completo*",
-      "company_label": "Empresa",
-      "email_label": "Endereço de E-mail*",
-      "message_label": "Mensagem*",
-      "submit_button": "Enviar"
-    },
-    "footer": {
-      "office": "Escritório",
-      "contact": "Contato",
-      "warehouse": "Armazém",
-      "social_media": "Siga-nos nas redes sociais:"
-    }
+  "navbar": {
+    "quienes_somos": "Quem Somos",
+    "contactanos": "Fale Conosco"
+  },
+  "hero_section": {
+    "header1": "Na SATURN VANITY",
+    "header2": "Temos sempre as melhores ofertas em celulares",
+    "subheader": "Baixe as ofertas de hoje clicando aqui!",
+    "button": "OFERTAS DE HOJE"
+  },
+  "brands_section": {
+    "title": "MARCAS"
+  },
+  "about_us": {
+    "title": "QUEM SOMOS",
+    "description": "Na Saturn Vanity, somos uma equipe de profissionais com mais de 20 anos de experiência no mercado de tecnologia. Somos especializados na compra e venda B2B de telefones móveis, novos e recondicionados, de marcas reconhecidas como Apple. Nosso compromisso é oferecer dispositivos de alta qualidade, mantendo sempre relações comerciais baseadas na confiança e eficiência."
+  },
+  "contact_form": {
+    "contactanos": "FALE CONOSCO",
+    "name_label": "Nome Completo*",
+    "company_label": "Empresa",
+    "email_label": "Endereço de E-mail*",
+    "message_label": "Mensagem*",
+    "submit_button": "Enviar"
+  },
+  "footer": {
+    "office": "Escritório",
+    "contact": "Contato",
+    "warehouse": "Armazém",
+    "social_media": "Siga-nos nas redes sociais:"
   }
-  
+}
