@@ -14,6 +14,11 @@ export default defineConfig({
           // Copia los archivos JSON dentro de 'locales'
           src: 'locales/*.json',
           dest: 'locales'
+        },
+        {
+          // Copia las imágenes dentro de 'assets/brands'
+          src: 'assets/brands/*',
+          dest: 'assets/brands'
         }
       ]
     })

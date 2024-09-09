@@ -62,18 +62,22 @@ const updateTextContent = (translations) => {
   const contactanosTitle = document.querySelector('#contact-section h2');
   if (contactanosTitle) contactanosTitle.innerText = translations.contact_form.contactanos;
 
-  // Footer
-  const officeTitle = document.querySelector('.footer .office h5');
-  if (officeTitle) officeTitle.innerText = translations.footer.office;
 
-  const contactDetails = document.querySelector('.footer .office p');
-  if (contactDetails) contactDetails.innerText = translations.footer.contact;
+// Footer
+const officeTitle = document.querySelector('.col-md-4.text-start h5');
+if (officeTitle) officeTitle.innerText = translations.footer.office;
 
-  const warehouseTitle = document.querySelector('.footer .warehouse h5');
-  if (warehouseTitle) warehouseTitle.innerText = translations.footer.warehouse;
+const contactDetails = document.querySelector('.col-md-4.text-start p:nth-of-type(2)');
+if (contactDetails) contactDetails.innerText = translations.footer.contact;
 
-  const socialMediaTitle = document.querySelector('.footer .social_media h5');
-  if (socialMediaTitle) socialMediaTitle.innerText = translations.footer.social_media;
+const warehouseTitle = document.querySelector('.col-md-4.text-md-center h5');
+if (warehouseTitle) warehouseTitle.innerText = translations.footer.warehouse;
+
+const socialMediaTitle = document.querySelector('h5.d-none.d-md-block');
+if (socialMediaTitle) socialMediaTitle.innerText = translations.footer.social_media;
+
+  
+
 };
 
 // Detectar el idioma del navegador
