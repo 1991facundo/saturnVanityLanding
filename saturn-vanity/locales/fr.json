@@ -1,0 +1,26 @@
+
+{
+    "navbar": {
+      "quienes_somos": "Qui Nous Sommes",
+      "contactanos": "Contactez-Nous"
+    },
+    "hero_section": {
+      "header1": "Chez SATURN VANITY",
+      "header2": "Nous avons toujours les meilleures offres sur les mobiles",
+      "button": "OFFRES DU JOUR"
+    },
+    "contact_form": {
+      "name_label": "Nom Complet*",
+      "company_label": "Entreprise",
+      "email_label": "Adresse E-mail*",
+      "message_label": "Message*",
+      "submit_button": "Envoyer"
+    },
+    "footer": {
+      "office": "Bureau",
+      "contact": "Contact",
+      "warehouse": "Entrepôt",
+      "social_media": "Suivez-nous sur les réseaux sociaux:"
+    }
+  }
+  

@@ -1,0 +1,25 @@
+{
+    "navbar": {
+      "quienes_somos": "Ποιοι Είμαστε",
+      "contactanos": "Επικοινωνήστε μαζί μας"
+    },
+    "hero_section": {
+      "header1": "Στο SATURN VANITY",
+      "header2": "Έχουμε πάντα τις καλύτερες προσφορές σε κινητά",
+      "button": "ΠΡΟΣΦΟΡΕΣ ΣΗΜΕΡΑ"
+    },
+    "contact_form": {
+      "name_label": "Πλήρες Όνομα*",
+      "company_label": "Εταιρεία",
+      "email_label": "Διεύθυνση Email*",
+      "message_label": "Μήνυμα*",
+      "submit_button": "Αποστολή"
+    },
+    "footer": {
+      "office": "Γραφείο",
+      "contact": "Επικοινωνία",
+      "warehouse": "Αποθήκη",
+      "social_media": "Ακολουθήστε μας στα κοινωνικά δίκτυα:"
+    }
+  }
+  
