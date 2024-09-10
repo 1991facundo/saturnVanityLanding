@@ -67,15 +67,24 @@ const updateTextContent = (translations) => {
 const officeTitle = document.querySelector('.col-md-4.text-start h5');
 if (officeTitle) officeTitle.innerText = translations.footer.office;
 
-const contactDetails = document.querySelector('.col-md-4.text-start p:nth-of-type(2)');
-if (contactDetails) contactDetails.innerText = translations.footer.contact;
+const officeContactTitle = document.getElementById('office-contact-title');
+if (officeContactTitle) officeContactTitle.innerText = translations.footer.contact;  
+
+const officePhone = document.getElementById('office-phone');
+if (officePhone) officePhone.innerHTML = "+351 963 149 791<br />info@saturnvanity.com";  
 
 const warehouseTitle = document.querySelector('.col-md-4.text-md-center h5');
 if (warehouseTitle) warehouseTitle.innerText = translations.footer.warehouse;
 
+const warehouseContactTitle = document.getElementById('warehouse-contact-title');
+if (warehouseContactTitle) warehouseContactTitle.innerText = translations.footer.contact;  
+
+const warehousePhone = document.getElementById('warehouse-phone');
+if (warehousePhone) warehousePhone.innerText = "+351 936 256 067"; 
+
+
 const socialMediaTitle = document.querySelector('h5.d-none.d-md-block');
 if (socialMediaTitle) socialMediaTitle.innerText = translations.footer.social_media;
-
   
 
 };
@@ -275,3 +284,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+

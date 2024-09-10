@@ -17,15 +17,21 @@
   </head>
 
   <body>
-    Navbar
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div class="container-fluid">
         <!-- El logo y el botón de menú -->
-        <a class="navbar-brand" href="#"><img src="/assets/logoNavBar.png" alt="svl logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand" href="#"
+          ><img src="/assets/logoNavBar.png" alt="svl logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -36,7 +42,11 @@
             </li>
           </ul>
           <!-- Selector de Idioma -->
-          <select id="language-selector" class="form-select ms-2" style="width: auto;">
+          <select
+            id="language-selector"
+            class="form-select ms-2"
+            style="width: auto"
+          >
             <option value="es">ES</option>
             <option value="en">EN</option>
             <option value="it">IT</option>
@@ -49,29 +59,27 @@
         </div>
       </div>
     </nav>
-    
 
     <!-- HERO SECTION -->
+
+    
 
     <section
       class="hero text-white text-center d-flex align-items-center justify-content-center"
     >
       <div class="container logoContainer">
-
         <div class="animation-container">
           <canvas id="canvas3d"></canvas>
         </div>
 
-        <div id="deals" >
+        <div id="deals">
           <div class="textHero">
-          <h3> <span style="color: #c8c5c0;">SATURN VANITY</span> </h3>
+            <h3><span style="color: #c8c5c0">SATURN VANITY</span></h3>
             <h3></h3>
             <h4></h4>
           </div>
-            <button id="offer-button"><p></p></button>
+          <button id="offer-button"><p></p></button>
         </div>
-
-       
       </div>
     </section>
 
@@ -83,30 +91,26 @@
       <div class="container text-center">
         <h2 class="mb-4"></h2>
         <p>
-           <strong></strong>
+          <strong></strong>
         </p>
-       
       </div>
     </section>
 
     <!-- Formulario -->
 
     <div id="contact-section">
-      <section id="contact" >
+      <section id="contact">
         <div class="container">
           <h2></h2>
 
           <div class="contact-content">
-            
             <form
               id="contactForm"
               method="POST"
               action="components/send-email.php"
             >
               <div class="mb-3">
-                <label for="fullName" class="form-label"
-                  ></label
-                >
+                <label for="fullName" class="form-label"></label>
                 <input
                   type="text"
                   class="form-control"
@@ -125,9 +129,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label"
-                  ></label
-                >
+                <label for="email" class="form-label"></label>
                 <input
                   type="email"
                   class="form-control"
@@ -152,7 +154,6 @@
             <div class="imgContactForm">
               <img src="/assets/logo.png" alt="saturn vanity logo" />
             </div>
-
           </div>
         </div>
       </section>
@@ -172,68 +173,68 @@
       </a>
     </div>
 
-   <!-- Footer -->
-<footer class="bg-dark text-white py-4">
-  <div class="container text-left mb-4">
-    <p>VAT n° PT517589850</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <!-- Izquierda: Información de la oficina -->
-      <div class="col-md-4 text-start">
-        <h5 class="text-white">Office</h5>
-        <p>Rua Rossio do Meio 10 A 11 G<br />7350-135, Elvas, Portugal</p>
-        <h6 class="text-white">Contact</h6>
-        <p>+351 963 149 791<br />info@saturnvanity.com</p>
+    <!-- Footer -->
+    <footer class="footerBg text-white py-4">
+      <div class="container text-left mb-4">
+        <p>VAT N° PT517589850</p>
       </div>
+      <div class="container">
+        <div class="row">
+          <!-- Izquierda: Información de la oficina -->
+          <div class="col-md-4 text-start">
+            <h5 class="text-white">Oficina</h5>
+            <p>Rua Rossio do Meio 10 A 11 G<br />7350-135, Elvas, Portugal</p>
+            <h6 class="text-white" id="office-contact-title"></h6>
+            <p id="office-phone">+351 963 149 791<br />info@saturnvanity.com</p>
+          </div>
 
-      <!-- Centro: Información del almacén -->
-      <div class="col-md-4 text-start text-md-center">
-        <h5 class="text-white">Warehouse</h5>
-        <p>
-          Rua da Gráfica Almondina lt 34<br />2350-483, Torres Novas,
-          Portugal
-        </p>
-        <h6 class="text-white">Contact</h6>
-        <p>+351 936 256 067</p>
-      </div>
+          <!-- Centro: Información del almacén -->
+          <div class="col-md-4 text-start text-md-center">
+            <h5 class="text-white">Almacén</h5>
+            <p>
+              Rua da Gráfica Almondina lt 34<br />2350-483, Torres Novas,
+              Portugal
+            </p>
+            <h6 class="text-white" id="warehouse-contact-title"></h6>
+            <p id="warehouse-phone">+351 936 256 067</p>
+          </div>
 
-      <!-- Derecha: Redes sociales -->
-      <div class="col-md-4 text-start text-md-end">
-        <!-- Ocultar el texto en dispositivos móviles -->
-        <h5 class="text-white d-none d-md-block">Síguenos en nuestras redes sociales:</h5>
-        <div class="d-flex justify-content-start justify-content-md-end">
-          <a href="https://www.instagram.com" class="text-white mx-2">
-            <img
-              src="assets/social/instagram.png"
-              alt="Instagram"
-              width="24"
-            />
-          </a>
-          <a href="https://www.facebook.com" class="text-white mx-2">
-            <img
-              src="assets/social/facebook.png"
-              alt="Facebook"
-              width="24"
-            />
-          </a>
-          <a href="https://www.twitter.com" class="text-white mx-2">
-            <img src="assets/social/twitter(1).png" alt="X" width="24" />
-          </a>
-          <a href="https://www.linkedin.com" class="text-white mx-2">
-            <img
-              src="/assets/social/linkedin.png"
-              alt="LinkedIn"
-              width="24"
-            />
-          </a>
+          <!-- Derecha: Redes sociales -->
+          <div class="col-md-4 text-start text-md-end">
+            <!-- Ocultar el texto en dispositivos móviles -->
+            <h5 class="text-white d-none d-md-block">
+              Síguenos en nuestras redes sociales:
+            </h5>
+            <div class="d-flex justify-content-start justify-content-md-end">
+              <a href="https://www.instagram.com" class="text-white mx-2">
+                <img
+                  src="assets/social/instagram.png"
+                  alt="Instagram"
+                  width="24"
+                />
+              </a>
+              <a href="https://www.facebook.com" class="text-white mx-2">
+                <img
+                  src="assets/social/facebook.png"
+                  alt="Facebook"
+                  width="24"
+                />
+              </a>
+              <a href="https://www.twitter.com" class="text-white mx-2">
+                <img src="assets/social/twitter(1).png" alt="X" width="24" />
+              </a>
+              <a href="https://www.linkedin.com" class="text-white mx-2">
+                <img
+                  src="/assets/social/linkedin.png"
+                  alt="LinkedIn"
+                  width="24"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
 
     <!-- Incluye el script main.js -->
     <script src="./main.js" type="module"></script>

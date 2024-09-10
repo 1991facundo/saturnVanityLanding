@@ -1,8 +1,12 @@
-body {
-  background-color: rgb(0, 3, 42);
+
+  body {
+    background-color: rgb(0, 5, 73);
   color: white;
   font-family: 'Roboto', sans-serif;
-}
+  }
+  
+ 
+  
 
 h1, h2, h3 {
   font-weight: 700;
@@ -11,7 +15,7 @@ h1, h2, h3 {
 
 /* Navbar */
 .navbar {
-  background-color: rgb(0, 3, 42) !important;
+  background-color: rgb(0, 5, 73) !important;
   padding: 10px 20px; 
   z-index: 1001;
 }
@@ -273,7 +277,7 @@ margin-top: 50px;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  flex-wrap: wrap; /* Asegura que los elementos hagan wrap en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
 .row.names div {
@@ -284,7 +288,7 @@ margin-top: 50px;
   width: 100%;
   max-width: 200px;
   color: #000 !important;
-  margin-bottom: 15px; /* Añade espacio entre los elementos al hacer wrap */
+  margin-bottom: 15px; 
 }
 
 h2, h5 {
@@ -360,13 +364,13 @@ h2, h5 {
 @media (min-width: 992px) {
   .imgContactForm {
     opacity: 0;
-    transform: translateX(100px); /* Empieza fuera de la pantalla, a la derecha */
+    transform: translateX(100px); 
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
 
   .imgContactForm.show {
     opacity: 1;
-    transform: translateX(0); /* Vuelve a su posición original */
+    transform: translateX(0); 
   }
 }
 
@@ -398,6 +402,12 @@ h2, h5 {
   }
 }
 
+/* FOOTER */
+
+.footerBg{
+  background-color: rgba(0, 2, 29, 0.221);
+}
+
 /* BOTON DE WHATSAPP */
 
 .whatsapp-button {
@@ -411,3 +421,6 @@ h2, h5 {
   width: 60px;
   height: 60px;
 }
+
+
+
